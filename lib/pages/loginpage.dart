@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("ยินดีต้อนรับ"),
+        title: const Text("Firebase Authentication & Flutter"),
       ),
       body: ListView(
         children: [
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 borderSide: BorderSide(
                   width: 2,
-                  color: Colors.cyan,
+                  color: Colors.grey,
                 )),
             errorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 borderSide: BorderSide(
                   width: 2,
-                  color: Colors.grey,
+                  color: Colors.red,
                 ))),
       ),
     );
@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 borderSide: BorderSide(
                   width: 2,
-                  color: Colors.cyan,
+                  color: Colors.pink,
                 )),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -147,7 +147,7 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 borderSide: BorderSide(
                   width: 2,
-                  color: Colors.grey,
+                  color: Colors.red,
                 ))),
       ),
     );

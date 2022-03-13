@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 FirebaseAuth auth = FirebaseAuth.instance;
 GoogleSignIn googleSignIn = GoogleSignIn();
@@ -61,4 +60,8 @@ Future<void> googleSignOut() async {
   await auth.signOut().then((value) {
     googleSignIn.signOut();
   });
+}
+
+Future<void> signoutWithEmail() async {
+  await FirebaseAuth.instance.signOut();
 }

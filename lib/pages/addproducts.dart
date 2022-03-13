@@ -32,7 +32,7 @@ class _AddProductPageState extends State<AddProductPage> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('image/2.jpg'), fit: BoxFit.cover),
+            image: AssetImage('image/3.jpg'), fit: BoxFit.cover),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -46,7 +46,7 @@ class _AddProductPageState extends State<AddProductPage> {
               padding: const EdgeInsets.only(left: 35, top: 30),
               child: const Text(
                 'เพิ่มข้อมูลสินค้า',
-                style: TextStyle(color: Colors.cyan, fontSize: 33),
+                style: TextStyle(color: Colors.black, fontSize: 33),
               ),
             ),
             formfield(context),
@@ -69,7 +69,7 @@ class _AddProductPageState extends State<AddProductPage> {
                 children: [
                   TextFormField(
                     controller: _name,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       label: Text(
                         'Product name',
@@ -81,9 +81,7 @@ class _AddProductPageState extends State<AddProductPage> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(
-                          color: Colors.white,
-                        ),
+                        borderSide: const BorderSide(color: Colors.grey),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -98,7 +96,7 @@ class _AddProductPageState extends State<AddProductPage> {
                   ),
                   TextFormField(
                     controller: _price,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       label: Text(
                         'Price',
@@ -111,7 +109,7 @@ class _AddProductPageState extends State<AddProductPage> {
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: const BorderSide(
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                       ),
                       errorBorder: OutlineInputBorder(
@@ -127,7 +125,7 @@ class _AddProductPageState extends State<AddProductPage> {
                   ),
                   TextFormField(
                     controller: _type,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       label: Text(
                         'Product Type',
@@ -139,9 +137,7 @@ class _AddProductPageState extends State<AddProductPage> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(
-                          color: Colors.white,
-                        ),
+                        borderSide: const BorderSide(color: Colors.black),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -160,7 +156,7 @@ class _AddProductPageState extends State<AddProductPage> {
                       const Text(
                         'บันทึกข้อมูล',
                         style: TextStyle(
-                            color: Colors.cyan,
+                            color: Colors.black,
                             fontSize: 27,
                             fontWeight: FontWeight.w700),
                       ),

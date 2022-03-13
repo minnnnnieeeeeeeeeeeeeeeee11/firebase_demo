@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebasedemo/pages/addproducts.dart';
+import 'package:firebasedemo/pages/editproduct.dart';
 import 'package:flutter/material.dart';
 
 class ShowProductPage extends StatefulWidget {
@@ -26,7 +27,7 @@ class _ShowProductPageState extends State<ShowProductPage> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('image/2.jpg'), fit: BoxFit.cover),
+            image: AssetImage('image/3.jpg'), fit: BoxFit.cover),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -40,7 +41,7 @@ class _ShowProductPageState extends State<ShowProductPage> {
               padding: const EdgeInsets.only(left: 100),
               child: Text(
                 'สินค้าทั้งหมด',
-                style: TextStyle(color: Colors.cyan, fontSize: 33),
+                style: TextStyle(color: Colors.black, fontSize: 33),
               ),
             ),
             showlist(),
@@ -75,7 +76,14 @@ class _ShowProductPageState extends State<ShowProductPage> {
                 Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
                 return Card(
                   child: ListTile(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EditProductPage(id: doc.id),
+                        ),
+                      ).then((value) => setState(() {}));
+                    },
                     title: Text(
                       '${data['product_name']}',
                       style: const TextStyle(
